@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme TWIN NETWORK</title>
+    <link rel="stylesheet" href="{%static 'css/fourth.css' %}"> <!-- Lien vers le CSS amélioré -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}"
+w</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="#" alt="Logo TWIN" />
+            <ul>
+                <li><a href="{% url 'accueil' %}" class="active">Accueil</a></li>
+                <li><a href="{% url 'etudiant' %}">Étudiant</a></li>
+                <li><a href="{% url 'alumni' %}">Alumni</a></li>
+                <li><a href="{% url 'annonce' %}">Annonce</a></li>
+                <li><a href="{% url 'projet' %}">Projet</a></li>
+                <li><a href="#">Messagerie</a></li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="status-bar">
+                <img src="profile-pic.png" alt="Profil" class="status-pic">
+            </div>
+
+            <div class="stories">
+                <div class="story">Projet 1</div>
+                <div class="story">Projet 2</div>
+                <div class="story">Projet 3</div>
+                <div class="story">Projet 4</div>
+                <div class="story">Projet 5</div>
+            </div>
+
+            <h2>Annonces Récentes</h2> <!-- Titre ajouté ici -->
+
+            <div class="posts">
+                <div class="post">
+                    <strong>Eliott Kean</strong> a partagé une nouvelle mise à jour !
+                </div>
+                <div class="post">
+                    <strong>Urcile Oura</strong> a commenté sur votre projet.
+                </div>
+                <div class="post">
+                    <strong>Esli Oura</strong> a rejoint votre groupe.
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
+

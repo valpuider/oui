@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étudiants - TWIN NETWORK</title>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    <link rel="stylesheet" href="{%static 'css/Annonce.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="logo-twin.png" alt="Logo TWIN" />
+            <ul>
+                <li><a href="{% url 'accueil' %}">Accueil</a></li>
+                <li><a href="{% url 'etudiant' %}">Étudiant</a></li>
+                <li><a href="{% url 'alumni' %}">Alumni</a></li>
+                <li><a href="{% url 'annonce' %}" class="active">Annonces</a></li>
+                <li><a href="{% url 'projet' %}">Projet</a></li>
+                <li><a href="messagerie.html">Messagerie</a></li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+        <div class="announcement-creation">
+        <h2>Créer une Annonce</h2>
+        <form class="announcement-form">
+            <label for="announcement-title">Titre de l'annonce:</label>
+            <input type="text" id="announcement-title" placeholder="Titre de l'annonce..." required>
+
+            <label for="announcement-type">Type d'annonce:</label>
+            <select id="announcement-type" required>
+                <option value="general">Annonces Générales</option>
+                <option value="academic">Annonces Académiques</option>
+                <option value="events">Annonces d'Événements</option>
+                <option value="job">Offres d'Emploi et de Stage</option>
+                <option value="alumni">Annonces des Alumni</option>
+                <option value="projects">Appels à Projets</option>
+                <option value="help">Annonces d’Aide et Mentorat</option>
+            </select>
+
+            <label for="announcement-content">Contenu de l'annonce:</label>
+            <textarea id="announcement-content" placeholder="Écrivez le contenu de l'annonce ici..." required></textarea>
+
+            <button type="submit">Publier l'annonce</button>
+        </form>
+    <h1>Annonces Récentes</h1>
+    
+    <div class="announcement-types">
+        <h2>Annonces Générales</h2>
+        <div class="announcement-list">
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce 1</h3>
+                <p>Détails de l'annonce 1 ici...</p>
+            </div></a>
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce 2</h3>
+                <p>Détails de l'annonce 2 ici...</p>
+            </div></a>
+        </div>
+
+        <h2>Annonces Académiques</h2>
+        <div class="announcement-list">
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce Académique 1</h3>
+                <p>Détails de l'annonce académique 1 ici...</p>
+            </div></a>
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce Académique 2</h3>
+                <p>Détails de l'annonce académique 2 ici...</p>
+            </div></a>
+        </div>
+
+        <h2>Annonces d'Événements</h2>
+        <div class="announcement-list">
+            <a href="first.html"><div class="announcement-card">
+                <h3>Événement 1</h3>
+                <p>Détails de l'événement 1 ici...</p>
+            </div></a>
+            <a href="first.html"><div class="announcement-card">
+                <h3>Événement 2</h3>
+                <p>Détails de l'événement 2 ici...</p>
+            </div></a>
+        </div>
+
+        <h2>Offres d'Emploi et de Stage</h2>
+        <div class="announcement-list">
+            <a href="first.html"><div class="announcement-card">
+                <h3>Offre d'Emploi 1</h3>
+                <p>Détails de l'offre d'emploi 1 ici...</p>
+            </div></a>
+            <a href="first.html"><div class="announcement-card">
+                <h3>Offre d'Emploi 2</h3>
+                <p>Détails de l'offre d'emploi 2 ici...</p>
+            </div></a>
+        </div>
+
+        <h2>Annonces des Alumni</h2>
+        <div class="announcement-list">
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce Alumni 1</h3>
+                <p>Détails de l'annonce alumni 1 ici...</p>
+            </div></a>
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce Alumni 2</h3>
+                <p>Détails de l'annonce alumni 2 ici...</p>
+            </div></a>
+        </div>
+
+        <h2>Appels à Projets</h2>
+        <div class="announcement-list">
+            <a href="first.html"><div class="announcement-card">
+                <h3>Appel à Projet 1</h3>
+                <p>Détails de l'appel à projet 1 ici...</p>
+            </div></a>
+            <a href="first.html"><div class="announcement-card">
+                <h3>Appel à Projet 2</h3>
+                <p>Détails de l'appel à projet 2 ici...</p>
+            </div></a>
+        </div>
+
+        <h2>Annonces d’Aide et Mentorat</h2>
+        <div class="announcement-list">
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce d'Aide 1</h3>
+                <p>Détails de l'annonce d'aide 1 ici...</p>
+            </div></a>
+            <a href="first.html"><div class="announcement-card">
+                <h3>Annonce d'Aide 2</h3>
+                <p>Détails de l'annonce d'aide 2 ici...</p>
+            </div></a>
+        </div>
+    </div>
+</main>

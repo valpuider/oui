@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie TWIN Network</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <h2>Contacts</h2>
+            <ul id="contacts">
+                <!-- Liste des contacts -->
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+            </ul>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2>Discussion avec <span id="active-contact">John Doe</span></h2>
+            </div>
+            <div class="chat-messages" id="messages">
+                <!-- Messages s'afficheront ici -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Tapez votre message...">
+                <button id="send-button">Envoyer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js">
+        const socket = io();
+
+document.getElementById('send-button').addEventListener('click', () => {
+    const message = document.getElementById('message-input').value;
+    if (message) {
+        socket.emit('message', message);
+        document.getElementById('message-input').value = '';
+    }
+});
+
+socket.on('message', (message) => {
+    const messageElement = document.createElement('div');
+    messageElement.textContent = message;
+    document.getElementById('messages').appendChild(messageElement);
+});
+
+    </script>
+    <script src="chat.js"></script>
+</body>
+</html>

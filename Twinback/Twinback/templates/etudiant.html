@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étudiants - TWIN NETWORK</title>
+    <link rel="stylesheet" href="{%static 'css/etudiant.css' %}">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="logo-twin.png" alt="Logo TWIN" />
+            <ul>
+                <li><a href="{% url 'accueil' %}">Accueil</a></li>
+                <li><a href="{% url 'etudiant' %}" class="active">Étudiant</a></li>
+                <li><a href="{% url 'alumni' %}">Alumni</a></li>
+                <li><a href="{% url 'annonce' %}">Annonces</a></li>
+                <li><a href="{% url 'projet' %}">Projet</a></li>
+                <li><a href="messagerie.html">Messagerie</a></li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Liste des Étudiants</h1>
+            <div class="student-search">
+                <input type="text" placeholder="Rechercher un étudiant..." />
+                <button>Rechercher</button>
+            </div>
+
+            <h2>Étudiants par Année</h2>
+            <div class="year-group">
+                <h3>1ère Année</h3>
+                <div class="student-card">
+                    <img src="student1.jpg" alt="Jean Dupont" />
+                    <div class="student-info">
+                        <h4>Jean Dupont</h4>
+                        <p>Spécialité : Web Development</p>
+                        <p>Année : 1ère Année</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="student2.jpg" alt="Marie Curie" />
+                    <div class="student-info">
+                        <h4>Marie Curie</h4>
+                        <p>Spécialité : Image Numérique</p>
+                        <p>Année : 1ère Année</p>
+                    </div>
+                </div>
+                
+                <h3>2ème Année</h3>
+                <div class="student-card">
+                    <img src="student3.jpg" alt="Alexandre Dumas" />
+                    <div class="student-info">
+                        <h4>Alexandre Dumas</h4>
+                        <p>Spécialité : Web Design</p>
+                        <p>Année : 2ème Année</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="student4.jpg" alt="Sophie Germain" />
+                    <div class="student-info">
+                        <h4>Sophie Germain</h4>
+                        <p>Spécialité : Développement Mobile</p>
+                        <p>Année : 2ème Année</p>
+                    </div>
+                </div>
+                
+                <h3>3ème Année</h3>
+                <div class="student-card">
+                    <img src="student5.jpg" alt="Gustave Eiffel" />
+                    <div class="student-info">
+                        <h4>Gustave Eiffel</h4>
+                        <p>Spécialité : Data Science</p>
+                        <p>Année : 3ème Année</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="student6.jpg" alt="Emilie du Châtelet" />
+                    <div class="student-info">
+                        <h4>Emilie du Châtelet</h4>
+                        <p>Spécialité : Réalité Virtuelle</p>
+                        <p>Année : 3ème Année</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
