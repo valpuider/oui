@@ -79,14 +79,15 @@ WSGI_APPLICATION = 'Twinback.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Utilise 'mysql' même pour MariaDB
-        'NAME': 'twin',   # Remplace par le nom de ta base
-        'USER': 'root',       # Ton utilisateur MariaDB
-        'PASSWORD': '1234',        # Ton mot de passe MariaDB
-        'HOST': 'localhost',                   # Adresse de l'hôte (généralement localhost)
-        'PORT': '3306',                        # Le port MariaDB (3306 est souvent par défaut)
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'twin',
+        'USER': 'root',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',  # ou l'adresse IP de votre instance RDS si vous l'utilisez
+        'PORT': '3306',
     }
 }
+
 
 
 
