@@ -1,0 +1,140 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Barre de navigation */
+.menu {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    background-color: #f7a928;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section des projets */
+.projets {
+    margin-top: 30px;
+}
+
+.projets h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #111;
+}
+
+.project-container {
+    margin-top: 20px;
+}
+
+.project-container h3 {
+    color: #333;
+}
+
+#projet-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#projet-form label {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+#projet-form input,
+#projet-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#projet-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#projet-form button:hover {
+    background-color: #f7a928;
+}
+
+#project-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#project-list li {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #projet-form input,
+    #projet-form textarea {
+        font-size: 0.9em;
+    }
+
+    #projet-form button {
+        font-size: 0.9em;
+    }
+}
+body{
+    background-image: C:\Users\hp\Documents\TWIN 2\SEMESTRE 1\PARTIE 1\TWIN NETWORK\Image\esatic.png;
+}

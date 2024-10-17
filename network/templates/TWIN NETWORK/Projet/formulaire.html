@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - TWIN NETWORK</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barre de navigation -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="messagerie.html">Messagerie</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="#">Profil</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section Plateforme de Projets -->
+        <section class="projets">
+            <h2>Plateforme des Projets TWIN</h2>
+            <div class="project-container">
+                <h3>Soumettre un projet</h3>
+                <form id="projet-form">
+                    <label for="titre-projet">Titre du projet :</label>
+                    <input type="text" id="titre-projet" name="titre-projet" placeholder="Nom du projet" required>
+
+                    <label for="description-projet">Description :</label>
+                    <textarea id="description-projet" name="description-projet" placeholder="Description du projet" required></textarea>
+
+                    <label for="fichier-projet">Joindre un fichier :</label>
+                    <input type="file" id="fichier-projet" name="fichier-projet">
+
+                    <button type="submit">Soumettre</button>
+                </form>
+
+                <h3>Liste des Projets</h3>
+                <ul id="project-list">
+                    <!-- Projets soumis -->
+                    <li>Projet 1 - Description courte</li>
+                    <li>Projet 2 - Description courte</li>
+                    <!-- Dynamique : les projets soumis apparaîtront ici -->
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="projets.js"></script>
+</body>
+</html>

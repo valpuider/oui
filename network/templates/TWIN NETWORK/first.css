@@ -1,0 +1,72 @@
+
+        /* Styles pour la structure globale */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background-color: #f4f4f4;*/
+            background-image: url(Image/esatic.png);
+            background-size: cover;
+        }
+        .header {
+            background-color: #f7a928;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header img{
+            width: 50px;
+        }
+
+
+        .banner {
+            text-align: center;
+            color: white;
+            padding: 70px;
+        }
+        .banner h2 {
+            font-size: 3em;
+        }
+        .banner p {
+            font-size: 1.3em;
+        }
+        .button {
+            background-color: #f7a928;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+            display: flexbox;
+        }
+
+
+
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: white;
+        }
+        .section {
+            text-align: center;
+            width: 30%;
+            padding: 20px;
+        }
+        .section h3 {
+            color: #111;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #f7a928;
+            text-decoration: none;
+            margin: 0 10px;
+        }

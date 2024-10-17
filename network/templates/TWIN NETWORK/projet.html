@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - TWIN NETWORK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projet.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="logo-twin.png" alt="Logo TWIN" />
+            <ul>
+                <li><a href="fourth.html">Accueil</a></li>
+                <li><a href="etudiants.html">Étudiant</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="Annonce.html">Annonces</a></li>
+                <li><a href="projet.html" class="active">Projet</a></li>
+                <li><a href="messagerie.html">Messagerie</a></li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Projets</h1>
+                <p>Explorez les projets actuels et soumettez votre propre projet.</p>
+            </header>
+
+            <div class="project-creation">
+                <h2>Créer un Projet</h2>
+                <form>
+                    <label for="project-title">Titre du projet:</label>
+                    <input type="text" id="project-title" placeholder="Titre du projet..." required>
+
+                    <label for="project-type">Type de projet:</label>
+                    <select id="project-type" required>
+                        <option value="research">Recherche</option>
+                        <option value="development">Développement</option>
+                        <option value="event">Événement</option>
+                        <option value="collaboration">Collaboration</option>
+                    </select>
+
+                    <label for="project-description">Description du projet:</label>
+                    <textarea id="project-description" placeholder="Décrivez le projet ici..." required></textarea>
+
+                    <button type="submit">Publier le projet</button>
+                </form>
+            </div>
+
+            <div class="project-list">
+                <h2>Projets en Cours</h2>
+                <div class="project-card">
+                    <h3>Titre du Projet 1</h3>
+                    <p>Description du projet 1.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Titre du Projet 2</h3>
+                    <p>Description du projet 2.</p>
+                </div>
+                <!-- Ajoutez plus de projets ici -->
+            </div>
+        </main>
+    </div>
+</body>
+</html>

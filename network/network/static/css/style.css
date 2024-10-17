@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Espacement vertical entre les onglets */
+}
+
+.sidebar a {
+    display: block; /* S'assurer que chaque lien remplit toute la largeur */
+    color: #f7a928;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px; /* Espacement interne autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Transition douce pour l'effet de survol */
+}
+
+.sidebar a:hover {
+    background-color: #f7a928; /* Changement de fond au survol */
+    color: #fff; /* Changement de couleur de texte au survol */
+}

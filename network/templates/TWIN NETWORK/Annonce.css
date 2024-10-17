@@ -1,0 +1,93 @@
+.sidebar a.active {
+    background-color: #f7a928; /* Couleur de fond pour l'onglet actif */
+    color: white; /* Couleur du texte pour l'onglet actif */
+    border-radius: 5px; /* Arrondi pour correspondre aux autres onglets */
+}
+
+.main-content {
+    margin-left: 250px; /* Espace pour la sidebar */
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto; /* Permet de défiler */
+    height: 100vh; /* Hauteur de la vue pour le défilement */
+}
+
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #007bff; /* Couleur des titres */
+    margin-top: 20px;
+}
+.announcement-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: auto;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Aligns form fields vertically */
+}
+
+.announcement-form label {
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0 5px;
+}
+
+.announcement-form input, .announcement-form select, .announcement-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; /* Ensure full width */
+    margin-bottom: 20px;
+}
+
+.announcement-form button {
+    align-self: center; /* Centers the button */
+    background-color: #f7a928;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.announcement-form button:hover {
+    background-color: #d68922;
+}
+
+
+.announcement-types {
+    margin-top: 20px;
+}
+
+.announcement-list {
+    margin-top: 10px;
+}
+
+.announcement-card {
+    background-color: #fff; /* Fond blanc */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition douce */
+}
+
+.announcement-card:hover {
+    transform: scale(1.02); /* Agrandissement léger */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+}
+.sidebar a:hover {
+    background-color: #f7a928; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Agrandissement léger au survol */
+    border-radius: 5px; /* Garder l'arrondi au survol */
+}

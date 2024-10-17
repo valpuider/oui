@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSCRIPTION</title>
+    <link href="second.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-conteneur">
+        <h2>User Login</h2>
+        <form>
+            <div class="input-group">
+                <span class="icon"><i class="fa fa-user"></i></span>
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <span class="icon"><i class="fa fa-lock"></i></span>
+                <input type="password" placeholder="Password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+       
+        // Démarrer la session
+        session_start();
+
+        // Nom d'utilisateur et mot de passe prédéfinis (pour démonstration)
+        $nom_utilisateur_valide = "admin";
+        $mot_de_passe_valide = "motdepasse123";
+
+        // Vérifier si le formulaire est soumis
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Assainir les entrées
+            $nom_utilisateur = htmlspecialchars(trim($_POST['nom_utilisateur']));
+            $mot_de_passe = htmlspecialchars(trim($_POST['mot_de_passe']));
+
+            // Vérification simple des identifiants
+            if ($nom_utilisateur === $nom_utilisateur_valide && $mot_de_passe === $mot_de_passe_valide) {
+            $_SESSION['connecte'] = true;
+            $_SESSION['nom_utilisateur'] = $nom_utilisateur;
+            header("Location: bienvenue.php"); // Rediriger vers la page de bienvenue après connexion
+            exit();
+            } else {
+                $message_erreur = "Nom d'utilisateur ou mot de passe incorrect.";
+                }
+        }
+
+    </script>
+</body>
+</html>

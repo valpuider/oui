@@ -1,0 +1,69 @@
+.sidebar a.active {
+    background-color: #f7a928; /* Couleur de fond pour l'onglet actif */
+    color: white; /* Couleur du texte pour l'onglet actif */
+    border-radius: 5px; /* Arrondi pour correspondre aux autres onglets */
+}
+
+.main-content {
+    margin-left: 250px; /* Espace pour la sidebar */
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto; /* Permet de défiler */
+    height: 100vh; /* Hauteur de la vue pour le défilement */
+}
+
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #007bff; /* Couleur des titres */
+}
+
+.alumni-search {
+    margin-bottom: 20px;
+}
+
+.alumni-search input {
+    padding: 10px;
+    width: calc(100% - 110px); /* Ajustement pour le bouton */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.alumni-search button {
+    padding: 10px;
+    background-color: #007bff; /* Couleur du bouton */
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.year-group {
+    margin-top: 20px;
+}
+
+.student-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Fond blanc */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition douce */
+}
+
+.student-card:hover {
+    transform: scale(1.02); /* Agrandissement léger */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+}
+
+.alumni-search button:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+}
+
+
